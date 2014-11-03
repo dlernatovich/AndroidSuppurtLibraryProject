@@ -48,4 +48,5 @@ public class BaseLibraryFragment extends Fragment implements BaseFunction {
             activity.showToastWithAction(message, buttonMessage, onClickListener);
         }
     }
+
 }

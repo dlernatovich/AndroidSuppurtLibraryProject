@@ -1,5 +1,6 @@
 package com.artlite.library.compilation.ui.activities;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -76,6 +77,13 @@ public class BaseLibraryActivity extends FragmentActivity implements BaseFunctio
     private void createMessageBar() {
         if (messageBar == null) {
             messageBar = new MessageBar(this);
+        }
+    }
+
+    public void setHeaderToUpperCase(String text) {
+        ActionBar actionBar = getActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle(text.toUpperCase());
         }
     }
 

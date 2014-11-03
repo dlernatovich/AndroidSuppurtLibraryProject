@@ -26,6 +26,8 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setHeaderToUpperCase(getString(R.string.app_name));
+
         User user = new User();
         user.setUserName("John");
         user.setUserSurname("Whell");
