@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 
+import com.artlite.library.compilation.ui.BaseFunction;
 import com.artlite.library.compilation.ui.fragments.BaseLibraryFragment;
 import com.github.mrengineer13.snackbar.SnackBar;
 
@@ -12,7 +13,7 @@ import net.simonvt.messagebar.MessageBar;
 /**
  * Created on 11/3/14.
  */
-public class BaseLibraryActivity extends FragmentActivity {
+public class BaseLibraryActivity extends FragmentActivity implements BaseFunction {
 
     private SnackBar snackBar;
     private MessageBar messageBar;
