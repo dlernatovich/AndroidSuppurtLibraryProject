@@ -8,16 +8,16 @@
         revision="20.0.0"
         sha1="a85588bec3e2c4584d593d3f15df1677321bca72"/>
     <item
-        dex="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/pre-dexed/debug/classes-a13ba34568fa3824454d1f026c72ea5aadcf2ec9.jar"
-        jar="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/exploded-aar/AndroidSuppurtLibraryProject/libraryCompilation/unspecified/classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="7503b480a7e3a3f156723476ebdad4f66f276589"/>
-    <item
         dex="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/pre-dexed/debug/android-support-v4-d27d64e3e2d29cd8628e5583444e860692c01df2.jar"
         jar="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/exploded-aar/AndroidSuppurtLibraryProject/libraryCompilation/unspecified/libs/android-support-v4.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="bd6479f5dd592790607e0504e66e0f31c2b4d308"/>
+    <item
+        dex="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/pre-dexed/debug/classes-a13ba34568fa3824454d1f026c72ea5aadcf2ec9.jar"
+        jar="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/exploded-aar/AndroidSuppurtLibraryProject/libraryCompilation/unspecified/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f89a5a5a5323ab4f370eba1bc39a8b456a304707"/>
 
 </pre-dex-items>
