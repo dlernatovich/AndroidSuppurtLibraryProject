@@ -8,6 +8,12 @@
         revision="20.0.0"
         sha1="a85588bec3e2c4584d593d3f15df1677321bca72"/>
     <item
+        dex="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/pre-dexed/debug/mpandroidchart-ef0413076893effbf98137b950b570b3629a0f12.jar"
+        jar="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/exploded-aar/AndroidSuppurtLibraryProject/libraryCompilation/unspecified/libs/mpandroidchart.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="eae78ae84e836e9325e9934d885ccb5dc161d685"/>
+    <item
         dex="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/pre-dexed/debug/android-support-v4-d27d64e3e2d29cd8628e5583444e860692c01df2.jar"
         jar="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/exploded-aar/AndroidSuppurtLibraryProject/libraryCompilation/unspecified/libs/android-support-v4.jar"
         jumboMode="false"
@@ -18,6 +24,6 @@
         jar="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/exploded-aar/AndroidSuppurtLibraryProject/libraryCompilation/unspecified/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="f89a5a5a5323ab4f370eba1bc39a8b456a304707"/>
+        sha1="79161c1d79f09dc9181e78fbea79168ad58dc16c"/>
 
 </pre-dex-items>

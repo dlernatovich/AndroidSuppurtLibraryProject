@@ -95,4 +95,37 @@
         <item name="android:textColor">#fff</item>
     </style>
 
+    <style name="MaterialsDeign" />
+
+    <style name="MaterialsDeign.CustomMaterialsTheme" parent="@android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/MaterialsActionBar</item>
+    </style>
+
+    <style name="MaterialsActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#324148</item>
+        <item name="android:titleTextStyle">@style/MaterialsDeign.ActionBar.TitleTextStyle</item>
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
+    <style name="MaterialsDeign.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="MaterialsDeign.ButtonBlue">
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/selector_button_blue</item>
+        <item name="android:textSize">@dimen/materials_button_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textColor">#fffffffd</item>
+    </style>
+
+    <style name="MaterialsDeign.ActivityStyle">
+        <item name="android:background">#465962</item>
+    </style>
+
 </resources>

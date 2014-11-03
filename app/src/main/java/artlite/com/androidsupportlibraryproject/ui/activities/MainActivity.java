@@ -1,4 +1,4 @@
-package artlite.com.androidsupportlibraryproject;
+package artlite.com.androidsupportlibraryproject.ui.activities;
 
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -14,6 +14,7 @@ import net.simonvt.messagebar.MessageBar;
 
 import java.util.List;
 
+import artlite.com.androidsupportlibraryproject.R;
 import artlite.com.androidsupportlibraryproject.enteties.User;
 import artlite.com.androidsupportlibraryproject.helpers.DatabaseHelper;
 
@@ -32,8 +33,11 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
 
         List<Model> models = DatabaseHelper.selectAll(User.class);
         Log.e("===>", "" + models.toString());
+
         ((Button) findViewById(R.id.button)).setOnClickListener(this);
         ((Button) findViewById(R.id.button1)).setOnClickListener(this);
+        ((Button) findViewById(R.id.button2)).setOnClickListener(this);
+        ((Button) findViewById(R.id.button3)).setOnClickListener(this);
     }
 
 
@@ -44,18 +48,27 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
                 showMessageWithAction("Activity was created", "OK", new SnackBar.OnMessageClickListener() {
                     @Override
                     public void onMessageClick(Parcelable token) {
-                        showToastWithAction("Message was clicked", "DONE", new MessageBar.OnMessageClickListener() {
-                            @Override
-                            public void onMessageClick(Parcelable token) {
-                                showToast("Another message");
-                            }
-                        });
+
                     }
                 });
                 break;
             }
             case R.id.button1: {
                 showMessage("Another way to create message");
+                break;
+            }
+
+            case R.id.button2: {
+                showToastWithAction("Message was clicked", "DONE", new MessageBar.OnMessageClickListener() {
+                    @Override
+                    public void onMessageClick(Parcelable token) {
+                        showToast("Another message");
+                    }
+                });
+                break;
+            }
+            case R.id.button3: {
+                showToast("Another message");
                 break;
             }
             default:
