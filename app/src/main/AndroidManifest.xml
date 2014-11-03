@@ -3,8 +3,8 @@
     package="artlite.com.androidsupportlibraryproject">
 
     <application
-        android:allowBackup="true"
         android:name=".main.CurrentApplication"
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
@@ -13,6 +13,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -24,6 +25,9 @@
             android:name="AA_DB_VERSION"
             android:value="1" />
 
+        <activity
+            android:name=".ui.activities.ChartActivity"
+            android:label="@string/title_activity_chart" />
     </application>
 
 </manifest>

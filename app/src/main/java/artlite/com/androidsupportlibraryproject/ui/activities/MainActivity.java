@@ -1,5 +1,6 @@
 package artlite.com.androidsupportlibraryproject.ui.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.View;
@@ -40,6 +41,7 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
         ((Button) findViewById(R.id.button1)).setOnClickListener(this);
         ((Button) findViewById(R.id.button2)).setOnClickListener(this);
         ((Button) findViewById(R.id.button3)).setOnClickListener(this);
+        ((Button) findViewById(R.id.button4)).setOnClickListener(this);
     }
 
 
@@ -71,6 +73,10 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
             }
             case R.id.button3: {
                 showToast("Another message");
+                break;
+            }
+            case R.id.button4: {
+                startActivity(new Intent(this, ChartActivity.class));
                 break;
             }
             default:
