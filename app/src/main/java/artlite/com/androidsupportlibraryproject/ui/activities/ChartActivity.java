@@ -27,9 +27,7 @@ public class ChartActivity extends BaseLibraryActivity {
         mChart = (LineChart) findViewById(R.id.lineChart1);
 
         mChart.setDrawUnitsInChart(true);
-// if enabled, the chart will always start at zero on the y-axis
         mChart.setStartAtZero(false);
-// disable the drawing of values into the chart
         mChart.setDrawYValues(false);
         mChart.setDrawBorder(true);
         mChart.setBorderPositions(new BarLineChartBase.BorderPosition[]{
@@ -38,12 +36,9 @@ public class ChartActivity extends BaseLibraryActivity {
         mChart.setDescription("");
         mChart.setNoDataTextDescription("You need to provide data for the chart.");
         mChart.setHighlightEnabled(true);
-// enable touch gestures
         mChart.setTouchEnabled(true);
-// enable scaling and dragging
         mChart.setDragEnabled(true);
         mChart.setScaleEnabled(true);
-// if disabled, scaling can be done on x- and y-axis separately
         mChart.setPinchZoom(true);
 
         setData(45, 100);
@@ -58,15 +53,9 @@ public class ChartActivity extends BaseLibraryActivity {
         for (int i = 0; i < count; i++) {
             float mult = (range + 1);
             float val = (float) (Math.random() * mult) + 3;// + (float)
-// ((mult *
-// 0.1) / 10);
             yVals.add(new Entry(val, i));
         }
-// create a dataset and give it a type
         LineDataSet set1 = new LineDataSet(yVals, "DataSet 1");
-// set1.setFillAlpha(110);
-// set1.setFillColor(Color.RED);
-// set the line to be drawn like this "- - - - - -"
         set1.enableDashedLine(10f, 5f, 0f);
         set1.setColor(Color.BLACK);
         set1.setCircleColor(Color.BLACK);
@@ -74,11 +63,8 @@ public class ChartActivity extends BaseLibraryActivity {
         set1.setCircleSize(4f);
         set1.setFillAlpha(65);
         set1.setFillColor(Color.BLACK);
-// set1.setShader(new LinearGradient(0, 0, 0, mChart.getHeight(),
-// Color.BLACK, Color.WHITE, Shader.TileMode.MIRROR));
         ArrayList<LineDataSet> dataSets = new ArrayList<LineDataSet>();
         dataSets.add(set1); // add the datasets
-// create a data object with the datasets
         LineData data = new LineData(xVals, dataSets);
         LimitLine ll1 = new LimitLine(130f);
         ll1.setLineWidth(4f);
@@ -92,7 +78,6 @@ public class ChartActivity extends BaseLibraryActivity {
         ll2.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT);
         data.addLimitLine(ll1);
         data.addLimitLine(ll2);
-// set data
         mChart.setData(data);
     }
 
