@@ -42,6 +42,7 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
         ((Button) findViewById(R.id.button2)).setOnClickListener(this);
         ((Button) findViewById(R.id.button3)).setOnClickListener(this);
         ((Button) findViewById(R.id.button4)).setOnClickListener(this);
+        ((Button) findViewById(R.id.button5)).setOnClickListener(this);
     }
 
 
@@ -77,6 +78,11 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
             }
             case R.id.button4: {
                 startActivity(new Intent(this, ChartActivity.class));
+                break;
+            }
+
+            case R.id.button5: {
+                startActivity(new Intent(this, PieChartActivity.class));
                 break;
             }
             default:
