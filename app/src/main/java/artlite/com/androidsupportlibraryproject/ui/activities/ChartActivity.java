@@ -4,12 +4,10 @@ import android.graphics.Color;
 import android.os.Bundle;
 
 import com.artlite.library.compilation.ui.activities.BaseLibraryActivity;
-import com.github.mikephil.charting.charts.BarLineChartBase;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
-import com.github.mikephil.charting.utils.LimitLine;
 
 import java.util.ArrayList;
 
@@ -25,23 +23,23 @@ public class ChartActivity extends BaseLibraryActivity {
         setContentView(R.layout.activity_chart);
         setHeaderToUpperCase(getString(R.string.title_activity_chart));
         mChart = (LineChart) findViewById(R.id.lineChart1);
+        setData(10, 10);
 
-        mChart.setDrawUnitsInChart(true);
-        mChart.setStartAtZero(false);
-        mChart.setDrawYValues(false);
-        mChart.setDrawBorder(true);
-        mChart.setBorderPositions(new BarLineChartBase.BorderPosition[]{
-                BarLineChartBase.BorderPosition.BOTTOM
-        });
+//        mChart.setDrawUnitsInChart(true);
+//        mChart.setStartAtZero(false);
+//        mChart.setDrawYValues(false);
+//        mChart.setDrawBorder(true);
+//        mChart.setBorderPositions(new BarLineChartBase.BorderPosition[]{
+//                BarLineChartBase.BorderPosition.BOTTOM
+//        });
         mChart.setDescription("");
-        mChart.setNoDataTextDescription("You need to provide data for the chart.");
+//        mChart.setNoDataTextDescription("You need to provide data for the chart.");
         mChart.setHighlightEnabled(true);
         mChart.setTouchEnabled(true);
         mChart.setDragEnabled(true);
         mChart.setScaleEnabled(true);
         mChart.setPinchZoom(true);
 
-        setData(45, 100);
     }
 
     private void setData(int count, float range) {
@@ -61,24 +59,24 @@ public class ChartActivity extends BaseLibraryActivity {
         set1.setCircleColor(Color.BLACK);
         set1.setLineWidth(1f);
         set1.setCircleSize(4f);
-        set1.setFillAlpha(65);
-        set1.setFillColor(Color.BLACK);
+        set1.setFillAlpha(0);
         ArrayList<LineDataSet> dataSets = new ArrayList<LineDataSet>();
         dataSets.add(set1); // add the datasets
         LineData data = new LineData(xVals, dataSets);
-        LimitLine ll1 = new LimitLine(130f);
-        ll1.setLineWidth(4f);
-        ll1.enableDashedLine(10f, 10f, 0f);
-        ll1.setDrawValue(true);
-        ll1.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT);
-        LimitLine ll2 = new LimitLine(-30f);
-        ll2.setLineWidth(4f);
-        ll2.enableDashedLine(10f, 10f, 0f);
-        ll2.setDrawValue(true);
-        ll2.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT);
-        data.addLimitLine(ll1);
-        data.addLimitLine(ll2);
+//        LimitLine ll1 = new LimitLine(130f);
+//        ll1.setLineWidth(4f);
+//        ll1.enableDashedLine(10f, 10f, 0f);
+//        ll1.setDrawValue(true);
+//        ll1.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT);
+//        LimitLine ll2 = new LimitLine(-30f);
+//        ll2.setLineWidth(4f);
+//        ll2.enableDashedLine(10f, 10f, 0f);
+//        ll2.setDrawValue(true);
+//        ll2.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT);
+//        data.addLimitLine(ll1);
+//        data.addLimitLine(ll2);
         mChart.setData(data);
+        mChart.fitScreen();
     }
 
 }

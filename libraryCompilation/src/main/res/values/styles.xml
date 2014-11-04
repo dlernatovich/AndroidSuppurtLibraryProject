@@ -99,6 +99,7 @@
 
     <style name="MaterialsDeign.CustomMaterialsTheme" parent="@android:Theme.Holo">
         <item name="android:actionBarStyle">@style/MaterialsActionBar</item>
+        <item name="android:buttonStyle">@style/MaterialsDeign.ButtonBlue</item>
     </style>
 
     <style name="MaterialsActionBar" parent="@android:style/Widget.Holo.ActionBar">
@@ -114,14 +115,16 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="MaterialsDeign.ButtonBlue">
+    <style name="MaterialsDeign.ButtonBlue" parent="android:Widget.Holo.Button">
         <item name="android:textStyle">bold</item>
         <item name="android:background">@drawable/selector_button_blue</item>
         <item name="android:textSize">@dimen/materials_button_text_size</item>
         <item name="android:singleLine">true</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:layout_margin">2dp</item>
         <item name="android:textColor">#fffffffd</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
     </style>
 
     <style name="MaterialsDeign.ActivityStyle">

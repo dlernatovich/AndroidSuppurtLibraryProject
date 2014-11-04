@@ -19,35 +19,30 @@
             android:layout_height="match_parent">
 
             <Button
-                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Show bottom message with action"
                 android:id="@+id/button" />
 
             <Button
-                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Show bottom message without action"
                 android:id="@+id/button1" />
 
             <Button
-                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Show custom toast with action"
                 android:id="@+id/button2" />
 
             <Button
-                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Show custom toast"
                 android:id="@+id/button3" />
 
             <Button
-                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Open line graphic"
