@@ -1,6 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/MaterialsDeign.ActivityStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -19,33 +18,38 @@
             android:layout_height="match_parent">
 
             <Button
+                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Show bottom message with action"
+                android:text="Action bottom toast"
                 android:id="@+id/button" />
 
             <Button
+                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Show bottom message without action"
+                android:text="Bottom toast"
                 android:id="@+id/button1" />
 
             <Button
+                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Show custom toast with action"
+                android:text="Action custom toast"
                 android:id="@+id/button2" />
 
             <Button
+                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Show custom toast"
+                android:text="Custom toast"
                 android:id="@+id/button3" />
 
             <Button
+                style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Open line graphic"
+                android:text="Line graph"
                 android:id="@+id/button4" />
         </LinearLayout>
     </ScrollView>

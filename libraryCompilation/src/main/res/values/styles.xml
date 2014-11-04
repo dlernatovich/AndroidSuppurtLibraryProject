@@ -100,6 +100,9 @@
     <style name="MaterialsDeign.CustomMaterialsTheme" parent="@android:Theme.Holo">
         <item name="android:actionBarStyle">@style/MaterialsActionBar</item>
         <item name="android:buttonStyle">@style/MaterialsDeign.ButtonBlue</item>
+        <item name="android:imageButtonStyle">@style/MaterialsDeign.ButtonBlue.Image</item>
+        <item name="android:colorBackground">@color/materials_background_color</item>
+        <item name="android:windowBackground">@color/materials_background_color</item>
     </style>
 
     <style name="MaterialsActionBar" parent="@android:style/Widget.Holo.ActionBar">
@@ -116,19 +119,29 @@
     </style>
 
     <style name="MaterialsDeign.ButtonBlue" parent="android:Widget.Holo.Button">
+        <item name="android:layout_margin">2dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:background">@drawable/selector_button_blue</item>
         <item name="android:textSize">@dimen/materials_button_text_size</item>
         <item name="android:singleLine">true</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">#fffffffd</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_marginTop">2dp</item>
-        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="MaterialsDeign.ButtonBlue.Image" parent="android:Widget.Holo.ImageButton">
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/selector_button_blue_rect</item>
+        <item name="android:textSize">@dimen/materials_button_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#fffffffd</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
     </style>
 
     <style name="MaterialsDeign.ActivityStyle">
-        <item name="android:background">#465962</item>
+        <item name="android:background">@color/materials_background_color</item>
     </style>
 
 </resources>
