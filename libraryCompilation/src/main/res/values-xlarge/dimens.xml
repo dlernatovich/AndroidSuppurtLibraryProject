@@ -1,5 +1,9 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="materials_button_text_size">24sp</dimen>
+    <dimen name="dimen_20">40dp</dimen>
+    <dimen name="dimen_3">6dp</dimen>
+    <dimen name="dimen_2">4dp</dimen>
+
 
 </resources>

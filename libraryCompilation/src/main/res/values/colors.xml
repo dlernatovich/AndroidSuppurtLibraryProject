@@ -6,4 +6,8 @@
     <color name="sb__button_text_color">#FB6541</color>
     <color name="materials_background_color">#465962</color>
     <color name="materials_menu_background">#ff5e7980</color>
+    <color name="materials_header_color">#324148</color>
+    <color name="materials_header_color_selected">#ff56666d</color>
+    <color name="blue_color">#ff638089</color>
+    <color name="blue_color_selected">#ff6d8d96</color>
 </resources>
