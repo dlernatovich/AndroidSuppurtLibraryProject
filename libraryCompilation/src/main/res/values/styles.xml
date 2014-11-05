@@ -103,6 +103,8 @@
         <item name="android:imageButtonStyle">@style/MaterialsDeign.ButtonBlue.Image</item>
         <item name="android:colorBackground">@color/materials_background_color</item>
         <item name="android:windowBackground">@color/materials_background_color</item>
+        <item name="android:popupMenuStyle">@style/MaterialsDeign.MenuStyle</item>
+        <item name="android:itemTextAppearance">@style/MaterialsDeign.MenuTextStyle</item>
     </style>
 
     <style name="MaterialsActionBar" parent="@android:style/Widget.Holo.ActionBar">
@@ -116,6 +118,15 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="MaterialsDeign.MenuStyle" parent="android:Widget.PopupMenu">
+        <item name="android:popupBackground">#324148</item>
+    </style>
+
+    <style name="MaterialsDeign.MenuTextStyle" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="MaterialsDeign.ButtonBlue" parent="android:Widget.Holo.Button">
