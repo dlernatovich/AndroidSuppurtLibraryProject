@@ -89,6 +89,7 @@ public class SnackBar {
     public interface OnVisibilityChangeListener {
 
         void onShow(int stackSize);
+
         void onHide(int stackSize);
     }
 
@@ -166,11 +167,11 @@ public class SnackBar {
         mHandler = new Handler();
     }
 
-    public static SnackBar create(Activity activity){
+    public static SnackBar create(Activity activity) {
         return new SnackBar(activity);
     }
 
-    public static SnackBar create(Context context, View view){
+    public static SnackBar create(Context context, View view) {
         return new SnackBar(context, view);
     }
 
@@ -358,7 +359,7 @@ public class SnackBar {
         int color = mContext.getResources().getColor(textColor);
         String message = mContext.getString(messageResId);
         String actionMessage = null;
-        if(actionMessageResId > 0) {
+        if (actionMessageResId > 0) {
             actionMessage = mContext.getString(actionMessageResId);
         }
         Snack m = new Snack(message, (actionMessage != null ? actionMessage.toUpperCase() : null),
@@ -369,7 +370,7 @@ public class SnackBar {
     public SnackBar show(int messageResId, int actionMessageResId, Style style, int actionIcon, Parcelable token, short duration) {
         String message = mContext.getString(messageResId);
         String actionMessage = null;
-        if(actionMessageResId > 0) {
+        if (actionMessageResId > 0) {
             actionMessage = mContext.getString(actionMessageResId);
         }
         Snack m = new Snack(message, (actionMessage != null ? actionMessage.toUpperCase() : null), actionIcon, token, duration, style);
@@ -392,7 +393,7 @@ public class SnackBar {
     }
 
     private ColorStateList getActionTextColor(Style style) {
-        switch (style){
+        switch (style) {
             case ALERT:
                 return mContext.getResources().getColorStateList(R.color.sb__button_text_color_red);
             case INFO:
@@ -428,7 +429,7 @@ public class SnackBar {
             mSnackBtn.setVisibility(View.GONE);
         }
 
-        if (message.mBtnTextColor > 0){
+        if (message.mBtnTextColor > 0) {
             mSnackBtn.setTextColor(message.mBtnTextColor);
         } else {
             mSnackBtn.setTextColor(getActionTextColor(message.mStyle));

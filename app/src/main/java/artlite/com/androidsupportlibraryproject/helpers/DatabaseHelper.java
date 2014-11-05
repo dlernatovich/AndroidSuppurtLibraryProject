@@ -15,6 +15,6 @@ public class DatabaseHelper {
         return models;
     }
 
-    public static void createTable(Class model){
+    public static void createTable(Class model) {
     }
 }

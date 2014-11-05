@@ -1,4 +1,3 @@
-
 package com.activeandroid.util;
 
 /*
@@ -31,6 +30,7 @@ public class IOUtils {
      * </p>
      * Equivalent to {@link java.io.Closeable#close()}, except any exceptions will be ignored. This is
      * typically used in finally blocks.
+     *
      * @param closeable A {@link java.io.Closeable} to close.
      */
     public static void closeQuietly(final Closeable closeable) {
@@ -52,6 +52,7 @@ public class IOUtils {
      * </p>
      * Equivalent to {@link android.database.Cursor#close()}, except any exceptions will be ignored. This is
      * typically used in finally blocks.
+     *
      * @param cursor A {@link android.database.Cursor} to close.
      */
     public static void closeQuietly(final Cursor cursor) {

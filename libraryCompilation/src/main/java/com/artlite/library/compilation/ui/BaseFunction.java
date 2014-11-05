@@ -9,7 +9,10 @@ import net.simonvt.messagebar.MessageBar;
  */
 public interface BaseFunction {
     public void showMessage(String message);
+
     public void showMessageWithAction(String message, String actionMessage, SnackBar.OnMessageClickListener onMessageClickListener);
+
     public void showToast(String message);
+
     public void showToastWithAction(String message, String buttonMessage, MessageBar.OnMessageClickListener onClickListener);
 }
