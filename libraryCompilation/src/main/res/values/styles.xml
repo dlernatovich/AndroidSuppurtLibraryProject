@@ -128,7 +128,7 @@
         <item name="android:button">@drawable/selector_checkbox</item>
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:paddingLeft">@dimen/dimen_2</item>
+        <!--<item name="android:paddingLeft">@dimen/dimen_2</item>-->
     </style>
 
     <style name="MaterialsDeign.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Medium">
