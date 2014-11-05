@@ -105,6 +105,7 @@
         <item name="android:windowBackground">@color/materials_background_color</item>
         <item name="android:popupMenuStyle">@style/MaterialsDeign.MenuStyle</item>
         <item name="android:itemTextAppearance">@style/MaterialsDeign.MenuTextStyle</item>
+        <item name="android:textViewStyle">@style/MaterialsDeign.TextView</item>
     </style>
 
     <style name="MaterialsActionBar" parent="@android:style/Widget.Holo.ActionBar">
@@ -118,6 +119,12 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="MaterialsDeign.TextView" parent="android:Widget.TextView">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="MaterialsDeign.MenuStyle" parent="android:Widget.PopupMenu">
