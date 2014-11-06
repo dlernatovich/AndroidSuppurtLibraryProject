@@ -13,7 +13,7 @@ public class PieChartActivity extends BaseLibraryActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pie_chart);
+        setContentView(R.layout.activity_ui_test);
     }
 
 

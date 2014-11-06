@@ -4,6 +4,11 @@
     <dimen name="dimen_20">40dp</dimen>
     <dimen name="dimen_3">6dp</dimen>
     <dimen name="dimen_2">4dp</dimen>
+    <dimen name="dimen_8">16dp</dimen>
+    <dimen name="dimen_5">10dp</dimen>
+    <dimen name="dimen_10">20dp</dimen>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
 
 
 </resources>

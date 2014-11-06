@@ -26,7 +26,7 @@
             android:value="1" />
 
         <activity
-            android:name=".ui.activities.ChartActivity"
+            android:name=".ui.activities.UITestActivity"
             android:label="@string/title_activity_chart" />
         <activity
             android:name=".ui.activities.PieChartActivity"

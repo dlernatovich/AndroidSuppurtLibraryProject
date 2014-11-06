@@ -77,7 +77,7 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
                 break;
             }
             case R.id.button4: {
-                startActivity(new Intent(this, ChartActivity.class));
+                startActivity(new Intent(this, UITestActivity.class));
                 break;
             }
 

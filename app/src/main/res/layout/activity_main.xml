@@ -56,8 +56,15 @@
                 style="@style/MaterialsDeign.ButtonBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pie chart"
+                android:text="UI Components"
                 android:id="@+id/button5" />
+
+            <Button
+                style="@style/MaterialsDeign.ButtonBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pie chart"
+                android:id="@+id/button6" />
         </LinearLayout>
     </ScrollView>
 

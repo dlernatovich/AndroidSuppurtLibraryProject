@@ -15,7 +15,7 @@ import java.util.Arrays;
 
 import artlite.com.androidsupportlibraryproject.R;
 
-public class ChartActivity extends BaseLibraryActivity {
+public class UITestActivity extends BaseLibraryActivity {
 
     private LineChart mChart;
 
