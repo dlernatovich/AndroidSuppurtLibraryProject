@@ -26,10 +26,10 @@
             android:value="1" />
 
         <activity
-            android:name=".ui.activities.UITestActivity"
+            android:name=".ui.activities.LineChartActivity"
             android:label="@string/title_activity_chart" />
         <activity
-            android:name=".ui.activities.PieChartActivity"
+            android:name=".ui.activities.UIActivity"
             android:label="@string/title_activity_pie_chart"></activity>
     </application>
 

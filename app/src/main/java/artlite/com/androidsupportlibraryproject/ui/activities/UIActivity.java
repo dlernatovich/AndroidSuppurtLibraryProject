@@ -8,12 +8,17 @@ import com.artlite.library.compilation.ui.activities.BaseLibraryActivity;
 
 import artlite.com.androidsupportlibraryproject.R;
 
-public class PieChartActivity extends BaseLibraryActivity {
+public class UIActivity extends BaseLibraryActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ui_test);
+    }
+
+    @Override
+    protected void initialize() {
+
     }
 
 

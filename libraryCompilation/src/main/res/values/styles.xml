@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="Theme_Black_NoTitleBar_Fullscreen" parent="android:Theme.Translucent.NoTitleBar" />
+
     <style name="SnackBar" />
 
     <style name="SnackBar.Container">
@@ -131,7 +133,6 @@
         <item name="android:button">@drawable/selector_checkbox</item>
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
         <item name="android:textStyle">bold</item>
-        <!--<item name="android:paddingLeft">@dimen/dimen_2</item>-->
     </style>
 
     <style name="MaterialsDeign.Switch">

@@ -3,7 +3,7 @@ package com.artlite.library.compilation.ui.fragments;
 import android.app.Activity;
 import android.support.v4.app.Fragment;
 
-import com.artlite.library.compilation.ui.BaseFunction;
+import com.artlite.library.compilation.constants.BaseFunction;
 import com.artlite.library.compilation.ui.activities.BaseLibraryActivity;
 import com.github.mrengineer13.snackbar.SnackBar;
 
@@ -46,6 +46,22 @@ public class BaseLibraryFragment extends Fragment implements BaseFunction {
         BaseLibraryActivity activity = getBaseActivity();
         if (activity != null) {
             activity.showToastWithAction(message, buttonMessage, onClickListener);
+        }
+    }
+
+    @Override
+    public void showWaitingDialog() {
+        BaseLibraryActivity activity = getBaseActivity();
+        if (activity != null) {
+            activity.showWaitingDialog();
+        }
+    }
+
+    @Override
+    public void hideWaitingDialog() {
+        BaseLibraryActivity activity = getBaseActivity();
+        if (activity != null) {
+            activity.hideWaitingDialog();
         }
     }
 

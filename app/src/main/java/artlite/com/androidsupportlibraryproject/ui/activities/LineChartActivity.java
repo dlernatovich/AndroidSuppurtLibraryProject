@@ -15,7 +15,7 @@ import java.util.Arrays;
 
 import artlite.com.androidsupportlibraryproject.R;
 
-public class UITestActivity extends BaseLibraryActivity {
+public class LineChartActivity extends BaseLibraryActivity {
 
     private LineChart mChart;
 
@@ -33,29 +33,59 @@ public class UITestActivity extends BaseLibraryActivity {
         setContentView(R.layout.activity_chart);
         setHeaderToUpperCase(getString(R.string.title_activity_chart));
         mChart = (LineChart) findViewById(R.id.lineChart1);
+        startAsyncTask();
+    }
 
+    @Override
+    protected void initialize() {
         initializeData(X_VALUES, Y_VALUES);
         initializeGraph(mChart);
     }
 
+    @Override
+    public void onPreExecute() {
+        super.onPreExecute();
+        showWaitingDialog();
+    }
+
+    @Override
+    public void doInBackground() {
+        super.doInBackground();
+        initialize();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onPostExecute() {
+        super.onPostExecute();
+        hideWaitingDialog();
+        mChart.fitScreen();
+    }
+
     private void initializeGraph(LineChart mChart) {
-        mChart.setDrawUnitsInChart(true);
-        mChart.setStartAtZero(false);
-        mChart.setDrawYValues(false);
-        mChart.setDrawBorder(true);
-        mChart.setDrawXLabels(true);
-        mChart.setBorderPositions(new BarLineChartBase.BorderPosition[]{
-                BarLineChartBase.BorderPosition.BOTTOM
-        });
-        mChart.setDescription("");
-        mChart.setHighlightEnabled(true);
-        mChart.setTouchEnabled(true);
-        mChart.setDragEnabled(true);
-        mChart.setScaleEnabled(true);
-        mChart.setPinchZoom(true);
-        mChart.getLegend().setTextColor(Color.WHITE);
-        mChart.getXLabels().setTextColor(Color.WHITE);
-        mChart.getYLabels().setTextColor(Color.WHITE);
+        if (mChart != null) {
+            mChart.setDrawUnitsInChart(true);
+            mChart.setStartAtZero(false);
+            mChart.setDrawYValues(false);
+            mChart.setDrawBorder(true);
+            mChart.setDrawXLabels(true);
+            mChart.setBorderPositions(new BarLineChartBase.BorderPosition[]{
+                    BarLineChartBase.BorderPosition.BOTTOM
+            });
+            mChart.setDescription("");
+            mChart.setHighlightEnabled(true);
+            mChart.setTouchEnabled(true);
+            mChart.setDragEnabled(true);
+            mChart.setScaleEnabled(true);
+            mChart.setPinchZoom(true);
+            mChart.getLegend().setTextColor(Color.WHITE);
+            mChart.getXLabels().setTextColor(Color.WHITE);
+            mChart.getYLabels().setTextColor(Color.WHITE);
+        }
     }
 
     private void initializeData(String[] xValues, float[] yValues) {
@@ -77,7 +107,6 @@ public class UITestActivity extends BaseLibraryActivity {
         LineData data = new LineData(xVals, dataSets);
         mChart.setData(data);
         mChart.setValueTextColor(Color.WHITE);
-        mChart.fitScreen();
     }
 
 }

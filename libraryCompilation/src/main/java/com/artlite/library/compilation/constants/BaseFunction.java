@@ -1,4 +1,4 @@
-package com.artlite.library.compilation.ui;
+package com.artlite.library.compilation.constants;
 
 import com.github.mrengineer13.snackbar.SnackBar;
 
@@ -15,4 +15,8 @@ public interface BaseFunction {
     public void showToast(String message);
 
     public void showToastWithAction(String message, String buttonMessage, MessageBar.OnMessageClickListener onClickListener);
+
+    public void showWaitingDialog();
+
+    public void hideWaitingDialog();
 }

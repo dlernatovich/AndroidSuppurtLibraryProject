@@ -26,16 +26,9 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         setHeaderToUpperCase(getString(R.string.app_name));
 
-        User user = new User();
-        user.setUserName("John");
-        user.setUserSurname("Whell");
-        user.save();
-
-        List<Model> models = DatabaseHelper.selectAll(User.class);
-        Log.e("===>", "" + models.toString());
+        startAsyncTask();
 
         ((Button) findViewById(R.id.button)).setOnClickListener(this);
         ((Button) findViewById(R.id.button1)).setOnClickListener(this);
@@ -43,8 +36,41 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
         ((Button) findViewById(R.id.button3)).setOnClickListener(this);
         ((Button) findViewById(R.id.button4)).setOnClickListener(this);
         ((Button) findViewById(R.id.button5)).setOnClickListener(this);
+
     }
 
+    @Override
+    protected void initialize() {
+        User user = new User();
+        user.setUserName("John");
+        user.setUserSurname("Whell");
+        user.save();
+        List<Model> models = DatabaseHelper.selectAll(User.class);
+        Log.e("===>", "" + models.toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onPreExecute() {
+        super.onPreExecute();
+        showWaitingDialog();
+    }
+
+    @Override
+    public void doInBackground() {
+        super.doInBackground();
+        initialize();
+    }
+
+    @Override
+    public void onPostExecute() {
+        super.onPostExecute();
+        hideWaitingDialog();
+    }
 
     @Override
     public void onClick(View v) {
@@ -77,12 +103,12 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
                 break;
             }
             case R.id.button4: {
-                startActivity(new Intent(this, UITestActivity.class));
+                startActivity(new Intent(this, LineChartActivity.class));
                 break;
             }
 
             case R.id.button5: {
-                startActivity(new Intent(this, PieChartActivity.class));
+                startActivity(new Intent(this, UIActivity.class));
                 break;
             }
             default:
