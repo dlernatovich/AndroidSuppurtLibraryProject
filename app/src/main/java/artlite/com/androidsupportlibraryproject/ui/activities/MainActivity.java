@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.artlite.library.compilation.ui.activities.BaseLibraryActivity;
+import com.artlite.library.compilation.utils.LibraryLogger;
 import com.thirdparty.activeandroid.Model;
-import com.thirdparty.activeandroid.util.Log;
 import com.thirdparty.messagebar.MessageBar;
 import com.thirdparty.snackbar.SnackBar;
 
@@ -41,12 +41,15 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
 
     @Override
     protected void initialize() {
+
         User user = new User();
         user.setUserName("John");
         user.setUserSurname("Whell");
+        user.setUserID(100);
         user.save();
+
         List<Model> models = DatabaseHelper.selectAll(User.class);
-        Log.e("===>", "" + models.toString());
+        LibraryLogger.error(models.toString());
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {

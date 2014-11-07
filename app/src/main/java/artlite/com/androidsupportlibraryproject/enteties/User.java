@@ -13,15 +13,18 @@ public class User extends Model {
     private String userName;
     @Column(name = "userSurname")
     private String userSurname;
+    @Column
+    private int userID;
 
     public User() {
         super();
     }
 
-    public User(String userName, String userSurname) {
+    public User(String userName, String userSurname, int userID) {
         super();
         this.userName = userName;
         this.userSurname = userSurname;
+        this.userID = userID;
     }
 
     public String getUserName() {
@@ -38,5 +41,18 @@ public class User extends Model {
 
     public void setUserSurname(String userSurname) {
         this.userSurname = userSurname;
+    }
+
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
+
+    @Override
+    public String toString() {
+        return "User: {Username:" + getUserName() + ", userSurName: " + getUserSurname() + ", userID: " + getUserID() + "}";
     }
 }
