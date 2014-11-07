@@ -5,9 +5,9 @@ import android.support.v4.app.Fragment;
 
 import com.artlite.library.compilation.constants.BaseFunction;
 import com.artlite.library.compilation.ui.activities.BaseLibraryActivity;
-import com.github.mrengineer13.snackbar.SnackBar;
+import com.thirdparty.snackbar.SnackBar;
 
-import net.simonvt.messagebar.MessageBar;
+import com.thirdparty.messagebar.MessageBar;
 
 /**
  * Created on 11/3/14.

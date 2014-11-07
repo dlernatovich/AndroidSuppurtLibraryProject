@@ -1,7 +1,7 @@
 package artlite.com.androidsupportlibraryproject.main;
 
-import com.activeandroid.ActiveAndroid;
-import com.activeandroid.app.Application;
+import com.thirdparty.activeandroid.ActiveAndroid;
+import com.thirdparty.activeandroid.app.Application;
 
 /**
  * Created on 10/30/14.

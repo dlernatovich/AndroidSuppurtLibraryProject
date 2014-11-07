@@ -1,8 +1,8 @@
 package artlite.com.androidsupportlibraryproject.enteties;
 
-import com.activeandroid.Model;
-import com.activeandroid.annotation.Column;
-import com.activeandroid.annotation.Table;
+import com.thirdparty.activeandroid.Model;
+import com.thirdparty.activeandroid.annotation.Column;
+import com.thirdparty.activeandroid.annotation.Table;
 
 /**
  * Created on 10/31/14.

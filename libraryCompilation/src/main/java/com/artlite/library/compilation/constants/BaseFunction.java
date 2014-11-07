@@ -1,8 +1,8 @@
 package com.artlite.library.compilation.constants;
 
-import com.github.mrengineer13.snackbar.SnackBar;
+import com.thirdparty.snackbar.SnackBar;
 
-import net.simonvt.messagebar.MessageBar;
+import com.thirdparty.messagebar.MessageBar;
 
 /**
  * Created on 11/3/14.

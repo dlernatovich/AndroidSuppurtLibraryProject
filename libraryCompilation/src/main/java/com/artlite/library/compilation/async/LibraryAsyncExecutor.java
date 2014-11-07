@@ -2,16 +2,16 @@ package com.artlite.library.compilation.async;
 
 import android.os.AsyncTask;
 
-import com.artlite.library.compilation.ui.activities.BaseAsyncLayer;
+import com.artlite.library.compilation.ui.activities.BaseAsyncLayerActivity;
 
 /**
  * Created on 11/7/14.
  */
 public class LibraryAsyncExecutor extends AsyncTask<Void, Object, Void> {
 
-    BaseAsyncLayer asyncActivity;
+    BaseAsyncLayerActivity asyncActivity;
 
-    public LibraryAsyncExecutor(BaseAsyncLayer asyncActivity) {
+    public LibraryAsyncExecutor(BaseAsyncLayerActivity asyncActivity) {
         this.asyncActivity = asyncActivity;
     }
 

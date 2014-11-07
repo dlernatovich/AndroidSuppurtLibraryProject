@@ -8,7 +8,7 @@ import com.artlite.library.compilation.ui.dialogs.ProgressDialog;
 /**
  * Created on 11/3/14.
  */
-public abstract class BaseLibraryActivity extends BaseAsyncLayer {
+public abstract class BaseLibraryActivity extends BaseAsyncLayerActivity {
 
     private ProgressDialog progressDialog;
 

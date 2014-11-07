@@ -6,12 +6,11 @@ import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 
-import com.activeandroid.Model;
-import com.activeandroid.util.Log;
 import com.artlite.library.compilation.ui.activities.BaseLibraryActivity;
-import com.github.mrengineer13.snackbar.SnackBar;
-
-import net.simonvt.messagebar.MessageBar;
+import com.thirdparty.activeandroid.Model;
+import com.thirdparty.activeandroid.util.Log;
+import com.thirdparty.messagebar.MessageBar;
+import com.thirdparty.snackbar.SnackBar;
 
 import java.util.List;
 
@@ -36,6 +35,7 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
         ((Button) findViewById(R.id.button3)).setOnClickListener(this);
         ((Button) findViewById(R.id.button4)).setOnClickListener(this);
         ((Button) findViewById(R.id.button5)).setOnClickListener(this);
+        ((Button) findViewById(R.id.button6)).setOnClickListener(this);
 
     }
 
@@ -109,6 +109,9 @@ public class MainActivity extends BaseLibraryActivity implements View.OnClickLis
 
             case R.id.button5: {
                 startActivity(new Intent(this, UIActivity.class));
+                break;
+            }
+            case R.id.button6: {
                 break;
             }
             default:
