@@ -14,10 +14,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import artlite.com.androidsupportlibraryproject.R;
+import butterknife.InjectView;
 
 public class LineChartActivity extends BaseLibraryActivity {
 
-    private LineChart mChart;
+    @InjectView(R.id.lineChart1)
+    LineChart mChart;
 
     private static final String[] X_VALUES = new String[]{
             "Monday", "Tuesday", "Wednesday", "Friday"
@@ -29,10 +31,7 @@ public class LineChartActivity extends BaseLibraryActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chart);
-        setHeaderToUpperCase(getString(R.string.title_activity_chart));
-        mChart = (LineChart) findViewById(R.id.lineChart1);
+        super.onCreate(savedInstanceState, R.layout.activity_chart);
         startAsyncTask();
     }
 

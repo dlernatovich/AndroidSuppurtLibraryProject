@@ -1,16 +1,17 @@
 package com.artlite.library.compilation.ui.activities;
 
+import android.os.Parcelable;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 
 import com.artlite.library.compilation.constants.BaseFunction;
-import com.thirdparty.snackbar.SnackBar;
-
 import com.thirdparty.messagebar.MessageBar;
+import com.thirdparty.snackbar.SnackBar;
 
 /**
  * Created on 11/7/14.
  */
-public abstract class BaseMessagingLayerActivity extends FragmentActivity implements BaseFunction {
+public abstract class BaseMessagingLayerActivity extends FragmentActivity implements BaseFunction, View.OnClickListener {
 
     private SnackBar snackBar;
     private MessageBar messageBar;
@@ -18,6 +19,17 @@ public abstract class BaseMessagingLayerActivity extends FragmentActivity implem
     /*
     MESSAGING FUNCTIONAL
      */
+    public void showErrorMessage(String message) {
+        createSnackBar();
+        snackBar.setOnClickListener(new SnackBar.OnMessageClickListener() {
+            @Override
+            public void onMessageClick(Parcelable token) {
+            }
+        });
+        snackBar.show(message, "OK", SnackBar.Style.ALERT, SnackBar.MED_SNACK);
+
+    }
+
     public void showMessage(String message) {
         createSnackBar();
         snackBar.show(message, SnackBar.MED_SNACK);

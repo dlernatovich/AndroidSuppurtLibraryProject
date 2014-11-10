@@ -29,4 +29,5 @@ dependencies {
     compile files('libs/universalImageLoader.jar')
     compile files('libs/mpandroidchart.jar')
     compile 'com.android.support:appcompat-v7:21.0.0'
+    compile files('libs/butterknife.jar')
 }

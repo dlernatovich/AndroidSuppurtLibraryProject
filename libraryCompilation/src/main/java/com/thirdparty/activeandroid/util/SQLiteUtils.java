@@ -20,6 +20,7 @@ import android.database.Cursor;
 import android.os.Build;
 import android.text.TextUtils;
 
+import com.artlite.library.compilation.utils.LibraryLogger;
 import com.thirdparty.activeandroid.Cache;
 import com.thirdparty.activeandroid.Model;
 import com.thirdparty.activeandroid.TableInfo;
@@ -102,6 +103,10 @@ public final class SQLiteUtils {
 
     public static <T extends Model> List<T> rawQuery(Class<? extends Model> type, String sql, String[] selectionArgs) {
         Cursor cursor = Cache.openDatabase().rawQuery(sql, selectionArgs);
+
+        LibraryLogger.error(sql);
+        LibraryLogger.error(selectionArgs.toString());
+
         List<T> entities = processCursor(type, cursor);
         cursor.close();
 

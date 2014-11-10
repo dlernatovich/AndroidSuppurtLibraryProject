@@ -32,6 +32,12 @@
         revision="20.0.0"
         sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
     <item
+        dex="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/pre-dexed/debug/butterknife-3598a664b40b05499a841638a16bfc95cf1c128e.jar"
+        jar="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/exploded-aar/AndroidSuppurtLibraryProject/libraryCompilation/unspecified/libs/butterknife.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3a10b25b6820e19102e118711afe6a66c0bae123"/>
+    <item
         dex="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-ee576f91b45a6538d4156fc6e674b6f65034f74e.jar"
         jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
         jumboMode="false"
@@ -42,6 +48,6 @@
         jar="/Users/dlernatovich/Documents/AndroidProjects/AndroidSuppurtLibraryProject/app/build/intermediates/exploded-aar/AndroidSuppurtLibraryProject/libraryCompilation/unspecified/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="ee206ea521137d0c757393468ae6724ee50b77b3"/>
+        sha1="ead65ee5a30a3914f15679048b3982dac4cb68d3"/>
 
 </pre-dex-items>

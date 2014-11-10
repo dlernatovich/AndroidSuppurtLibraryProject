@@ -5,6 +5,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_chart">Chart Activity</string>
-    <string name="title_activity_pie_chart">PieChartActivity</string>
+    <string name="title_activity_pie_chart">PieChart Activity</string>
+    <string name="title_activity_login">Login Activity</string>
+    <string name="title_activity_registration">Registration Activity</string>
 
 </resources>
