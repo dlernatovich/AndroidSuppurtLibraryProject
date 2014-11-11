@@ -1,3 +1,4 @@
 /scope_settings.xml
 .idea/
 .gradle/
+*.iml
