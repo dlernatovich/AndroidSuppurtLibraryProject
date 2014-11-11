@@ -1,5 +1,6 @@
 package artlite.com.androidsupportlibraryproject.enteties;
 
+
 import com.thirdparty.activeandroid.Model;
 import com.thirdparty.activeandroid.annotation.Column;
 import com.thirdparty.activeandroid.annotation.Table;
@@ -88,7 +89,7 @@ public class User extends Model {
 
     @Override
     public String toString() {
-        return "User: {Username:" + getUserName() + ", userSurName: " + getUserSurname() + ", userID: " + getUserID() + "}";
+        return "User: {Username:" + getUserName() + ", userSurName: " + getUserSurname() + ", userID: " + getUserID() + " userPassword:" + getUserPassword() + "}";
     }
 
 }

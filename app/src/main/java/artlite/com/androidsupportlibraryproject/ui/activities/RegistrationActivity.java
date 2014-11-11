@@ -6,12 +6,12 @@ import android.widget.EditText;
 
 import com.artlite.library.compilation.ui.activities.BaseLibraryActivity;
 import com.thirdparty.activeandroid.Model;
-import com.thirdparty.activeandroid.query.Select;
 
 import java.util.List;
 
 import artlite.com.androidsupportlibraryproject.R;
 import artlite.com.androidsupportlibraryproject.enteties.User;
+import artlite.com.androidsupportlibraryproject.helpers.DatabaseHelper;
 import artlite.com.androidsupportlibraryproject.helpers.UserHelper;
 import butterknife.InjectView;
 
@@ -68,20 +68,18 @@ public class RegistrationActivity extends BaseLibraryActivity {
             return;
         }
 
-        UserHelper.createUser(name, password, surName);
+        UserHelper.createUser(name, surName, password);
         closeActivity();
 
         showMessage("Account was created");
     }
 
     private boolean isAccountAlreadyCreated(String name, String password) {
-        List<Model> models = new Select().all().from(User.class).where("userName = ?", name).execute();
-
-//        String querryType = User.getUserNameQuerry(name);
-//        List<Model> models = DatabaseHelper.selectFrom(User.class, querryType, name);
-//        if (models.size() > 0) {
-//            return true;
-//        }
+        String querryType = User.getUserNameQuerry(name);
+        List<Model> models = DatabaseHelper.selectFrom(User.class, querryType, name);
+        if (models.size() > 0) {
+            return true;
+        }
         return false;
     }
 

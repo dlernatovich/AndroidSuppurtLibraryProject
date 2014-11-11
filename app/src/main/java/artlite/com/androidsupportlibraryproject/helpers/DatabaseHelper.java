@@ -1,5 +1,6 @@
 package artlite.com.androidsupportlibraryproject.helpers;
 
+
 import com.thirdparty.activeandroid.Model;
 import com.thirdparty.activeandroid.query.From;
 import com.thirdparty.activeandroid.query.Select;

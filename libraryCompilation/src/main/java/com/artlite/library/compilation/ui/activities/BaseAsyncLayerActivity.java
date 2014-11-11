@@ -8,10 +8,8 @@ import com.artlite.library.compilation.utils.LibraryLogger;
  */
 public abstract class BaseAsyncLayerActivity extends BaseFragmentLayerActivity {
 
-    private LibraryAsyncExecutor baseAsyncTask = new LibraryAsyncExecutor(this);
-
     protected final void startAsyncTask() {
-        baseAsyncTask.execute();
+        new LibraryAsyncExecutor(this).execute();
     }
 
     public void onPreExecute() {
@@ -19,7 +17,7 @@ public abstract class BaseAsyncLayerActivity extends BaseFragmentLayerActivity {
     }
 
     public void doInBackground() {
-
+        LibraryLogger.error("doInBackgroundStarted");
     }
 
     public void onPostExecute() {

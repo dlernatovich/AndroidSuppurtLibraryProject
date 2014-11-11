@@ -1,5 +1,6 @@
 package artlite.com.androidsupportlibraryproject.main;
 
+
 import com.thirdparty.activeandroid.ActiveAndroid;
 import com.thirdparty.activeandroid.app.Application;
 
